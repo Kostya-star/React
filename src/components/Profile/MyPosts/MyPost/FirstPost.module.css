@@ -1,0 +1,9 @@
+.firstpost {
+  width: 75px;
+}
+.firstpost img {
+  border-radius: 50%;
+}
+.firstpost span {
+  display: block;
+}

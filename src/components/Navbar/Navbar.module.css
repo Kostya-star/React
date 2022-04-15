@@ -1,0 +1,13 @@
+.nav {
+  grid-area: n;
+  background-color: blue;
+}
+.nav__item {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.nav__item_active {
+  color: red;
+  font-style: italic;
+}
