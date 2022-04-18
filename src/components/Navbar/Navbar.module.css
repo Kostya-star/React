@@ -1,6 +1,6 @@
 .nav {
   grid-area: n;
-  background-color: blue;
+  background-color: rgb(162, 0, 255);
 }
 .nav__item {
   display: block;
@@ -10,4 +10,7 @@
 .nav__item_active {
   color: red;
   font-style: italic;
+}
+a.activeLink {
+  color: gold;
 }
