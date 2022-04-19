@@ -1,12 +1,13 @@
 import MyPosts from './MyPosts/MyPosts'
 import ProfileCSS from './Profile.module.css'
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {
-  return <div>
-  <div>
-  <img src="https://picfiles.alphacoders.com/297/297577.jpg" alt="" />
-  </div>
-  <MyPosts />
-  </div>
+  return (
+    <div>
+      <ProfileInfo />
+      <MyPosts />
+    </div>
+  )
 }
 export default Profile;

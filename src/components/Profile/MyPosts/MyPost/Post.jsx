@@ -1,8 +1,8 @@
-import FirstPostCSS from './FirstPost.module.css'
+import PostCSS from './Post.module.css'
 
-const FirstPost = (props) => {
+const Post = (props) => {
   return (
-    <div className={FirstPostCSS.firstpost}>
+    <div className={PostCSS.post}>
         <img src="https://avatars.mds.yandex.net/i?id=3d1ca053b842be9a1d73109f156b68c0-5204637-images-thumbs&n=13" alt="" />
         {props.message}
       <span>like {props.likecount}</span>
@@ -10,4 +10,4 @@ const FirstPost = (props) => {
 )
   
 }
-export default FirstPost;
+export default Post;
