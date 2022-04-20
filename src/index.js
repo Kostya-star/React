@@ -4,14 +4,31 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+let posts = [
+    {id: 1, message: 'Hey bro!', likesCount: 12},
+    {id: 2, message: 'It is my first post! How are you?', likeCount: 21},
+    {id: 2, message: 'It is my first post! How are you?', likeCount: 21},
+  ]
+
+  let dialogsData = [
+    {id: 1, name: 'Costya'},
+    {id: 2, name: 'Nadya'},
+    {id: 3, name: 'Petr'},
+    {id: 4, name: 'Julia'},
+    {id: 5, name: 'Ivan'},
+  ]  
+
+  let messageData = [
+    {id: 1, message: 'hi'},
+    {id: 1, message: 'how r u'},
+    {id: 1, message: 'bye'},
+  ]
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+    <App posts={posts} dialogsData={dialogsData} messageData={messageData}/>
 );
 
 
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
