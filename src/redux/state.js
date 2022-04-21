@@ -19,6 +19,12 @@ let state = {
       {id: 4, name: 'Julia'},
       {id: 5, name: 'Ivan'},
     ]
+  },
+  sidebar: {
+    sidebarData: [
+      {id: 1, name: 'Danil'},
+      {id: 2, name: 'Evgeniy'},
+    ]
   }
   
 }

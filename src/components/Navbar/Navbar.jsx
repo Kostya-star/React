@@ -9,6 +9,7 @@ const Navbar = () => {
       <NavLink to='/news' activeClassName={NavbarCSS.activeLink} className={NavbarCSS.nav__item}>News</NavLink>
       <NavLink to='/music' activeClassName={NavbarCSS.activeLink} className={`${NavbarCSS.nav__item}  ${NavbarCSS.nav__item_active}`}>Music</NavLink>
       <NavLink to='/settings' activeClassName={NavbarCSS.activeLink} className={NavbarCSS.nav__item}>Settings</NavLink>
+      <NavLink to='/friends' activeClassName={NavbarCSS.activeLink} className={NavbarCSS.nav__item}>Friends</NavLink>
     </nav>
   )
 }

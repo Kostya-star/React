@@ -6,6 +6,7 @@ import Dialogs from './components/Dialogs/Dialogs';
 import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
+import Sidebar from './components/Sidebar/Sidebar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const App = (props) => {            
@@ -18,15 +19,14 @@ const App = (props) => {
         <div class='app-wrapper-content'>
           <Switch>
 
-            <Route path='/profile' render={ () => 
-              <Profile posts={props.state.profilePage.posts}/> }/>
+            <Route path='/profile' render={ () => <Profile state={props.state.profilePage}/> }/>
 
-            <Route path='/dialogs' render={ () => 
-              <Dialogs dialogsData={props.state.dialogsPage.dialogsData} messageData={props.state.dialogsPage.messageData}/> }/>
+            <Route path='/dialogs' render={ () => <Dialogs state={props.state.dialogsPage} /> }/>
               
             <Route path='/news' render={ () => <News/> }/>
             <Route path='/music' render={ () => <Music/> }/>
             <Route path='/settings' render={ () => <Settings/> }/>
+            <Route path='/sidebar' render={ () => <Sidebar state={props.state.sidebarData} /> }/>
           </Switch>
         </div>
       </div>
